@@ -24,11 +24,18 @@ class _QuizState extends State<Quiz> {
     if (answerSelected.length == questions.length) {
       setState(() {
         log(answerSelected.toString());
-        activeScreen = Result(answerSelected);
-        answerSelected = [];
+        activeScreen = Result(answerSelected, restartQuiz);
       });
     }
   }
+
+  void restartQuiz() {
+    setState(() {
+      answerSelected = [];
+      activeScreen = Home(changeScreen);
+    });
+  }
+
   // create a function to onPressed in PageQuestions
   //and add answer to answerSelected list and print to console log answer selected by user .
 
@@ -48,6 +55,7 @@ class _QuizState extends State<Quiz> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [

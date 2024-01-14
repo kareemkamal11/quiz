@@ -37,7 +37,7 @@ class _PageQuestionsState extends State<PageQuestions> {
         children: [
           textQuestion(currentQuestio.question),
           const SizedBox(height: 30),
-          ...currentQuestio.getShuffledAnswers().map((answer) {
+            ...currentQuestio.shuffledAnswers.map((answer) {
             return Container(
               width: double.infinity,
               margin: const EdgeInsets.all(5),

@@ -4,23 +4,27 @@ import '../models/quizquestion.dart';
 
 const List<QuizQuestion> questions = [
   QuizQuestion(
-    'What is the capital of France?',
-    ['Paris', 'London', 'Berlin', 'Madrid'],
-  ),
-  QuizQuestion(
-    'Who is CEO of Tesla?',
-    ['Jeff Bezos', 'Bill Gates', 'Tony Stark', 'Elon Musk'],
-  ),
-  QuizQuestion(
     'The iPhone was created by which company?',
-    ['Intel', 'Amazon', 'Apple', 'Microsoft'],
+    ['Apple', 'Intel', 'Amazon', 'Microsoft'],
   ),
   QuizQuestion(
-    'What is the capital of India?',
-    ['Delhi', 'Mumbai', 'Kolkata', 'Chennai'],
+    'Who is CEO of Amazon?',
+    ['Jeff Bezos', 'Elon Musk', 'Bill Gates', 'Tony Stark'],
   ),
   QuizQuestion(
-    'Who is the CEO of Google?',
-    ['Jeff Bezos', 'Bill Gates', 'Sundar Pichai', 'Elon Musk'],
+    'The Windows was created by which company?',
+    ['Microsoft', 'Intel', 'Amazon', 'Apple'],
+  ),
+  QuizQuestion(
+    'Who is CEO of Microsoft?',
+    ['Bill Gates', 'Elon Musk', 'Jeff Bezos', 'Tony Stark'],
+  ),
+  QuizQuestion(
+    'The Android was created by which company?',
+    ['Google', 'Intel', 'Amazon', 'Apple'],
+  ),
+  QuizQuestion(
+    'Who is CEO of Google?',
+    ['Sundar Pichai', 'Elon Musk', 'Jeff Bezos', 'Tony Stark'],
   ),
 ];

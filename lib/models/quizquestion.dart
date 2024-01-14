@@ -3,7 +3,7 @@ class QuizQuestion {
   final List<String> answers;
   // final int correctAnswer;
 
-  List<String> getShuffledAnswers() {
+  List<String> get shuffledAnswers{
     final shuffeldList = List.of(answers);
     shuffeldList.shuffle(); // shuffle list of answers 
     return shuffeldList;
